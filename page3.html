@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../public/images/book3_BKC_icon.ico" type="image/x-icon">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style type="text/css">
+        @media screen and (orientation : landscape) {
+            .mainn {
+                padding: 300px;
+                background-color: aqua;
+                height: 100vh;
+
+            }
+
+            .main {
+                background-color: wheat;
+                border-radius: 20px;
+                margin-top: -240px;
+
+            }
+
+            .box {
+                border: 1px solid black;
+                width: 350px;
+                height: 300px;
+                margin-left: 200px;
+                border-radius: 15px;
+            }
+
+            .pp {
+                margin-top: -5px;
+            }
+
+            body {
+                background-attachment: scroll;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+
+            .page1 {
+                background-color: darksalmon;
+            }
+        }
+
+        @media screen and (orientation : portrait) {
+            .page1 {
+                color: black;
+                background-color: burlywood;
+            }
+
+            body {
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .page1_home {
+            margin-left: 550px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        function feedbackdetails() {
+            document.getElementById("page1js").style.display = "block";
+            document.getElementById("feedbackform").style.display = "none";
+            document.getElementById("feedbackbutton").style.display = "none";
+            document.getElementById("feedbackbutton").textContent = "Feedback"; //color will not change for changing color next line
+            document.getElementById("lblname").textContent = document.getElementById("name1").value;
+            document.getElementById("lblfeedback").textContent = document.getElementById("feedback1").value;
+
+        }
+
+    </script>
+
+</head>
+
+<body background="../public/image/background3.jpeg">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <div class="mainn">
+        <div class="main ">
+            <div class="h3 bg-secondary p-4 text-white text-center mt-1 rounded-2">Book Showcase:Book 1 Details</div>
+            <div class="bg-black p-3 pp rounded-2">
+                <a href="project.html"><button class="page1_home btn btn-link">HOME</button></a>
+            </div>
+        </div>
+
+
+        <div class="page1">
+            <div>
+                <div class="h4 mt-2 ms-4 badge  p-3 fs-6">Don't Believe Everything You Think (English)</div>
+                <div>
+
+                    <a href="https://www.amazon.in/Mountain-You-Transforming-Self-Sabotage-Self-Mastery/dp/9355434146"><img
+                            src="../public/images/Book3.jpg" alt="" class="ms-4" style="height: 240px;"></a>
+
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faq"><span class="bi-"></span>Genre</button>
+                <div class=" collapse  rounded-1 p-2 " id="faq">
+                    <ul>
+                        <li>The Mountain Is You by Brianna Wiest falls under the self-help and personal development
+                            genres. It focuses on self-sabotage, emotional healing, and personal transformation,
+                            blending psychology, philosophy, and motivational insights.</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faqq">Index Page</button>
+                <div class=" collapse  rounded-1 p-2 " id="faqq">
+                    <ul>
+                        <li>Introduction</li>
+                        <li>Self-Help</li>
+                        <li>Personal Development</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faqqq">Author</button>
+                <div class=" collapse  rounded-1 p-2 " id="faqqq">
+                    <li>The author of The Mountain Is You is Brianna Wiest. She is known for her work in self-help,
+                        personal growth, and emotional healing, with other popular books like 101 Essays That Will
+                        Change The Way You Think and The Pivot Year.</li>
+
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faqqqq">Overview</button>
+                <div class=" collapse  rounded-1 p-2 " id="faqqqq">
+                    <li>The Mountain Is You explores the concept of self-sabotage and how we can overcome it to create
+                        lasting change in our lives. Brianna Wiest uses the metaphor of a mountain to represent the
+                        internal struggles we must face to grow into our best selves. The book blends psychology,
+                        self-awareness, and emotional intelligence to help readers break free from limiting beliefs,
+                        heal past wounds, and develop habits that support long-term success and happiness.</li>
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faq3">Refrence</button>
+                <div class=" collapse  rounded-1 p-2 " id="faq3">
+                    <li>APA (7th Edition)</li>
+                    <li> Wiest, B. (2020). The mountain is you: Transforming self-sabotage into self-mastery. Thought
+                        Catalog Books.</li>
+
+                    <li> MLA (9th Edition)</li>
+                    <li> Wiest, Brianna. The Mountain Is You: Transforming Self-Sabotage into Self-Mastery. Thought
+                        Catalog Books, 2020.</li>
+
+                    <li>Chicago (Author-Date)</li>
+                    <li>Wiest, Brianna. 2020. The Mountain Is You: Transforming Self-Sabotage into Self-Mastery. Thought
+                        Catalog Books.</li>
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success w-50 p-2 fs-6" data-bs-toggle="collapse"
+                    data-bs-target="#faq4">Purchase Link</button>
+                <div class=" collapse  rounded-1 p-2 " id="faq4">
+                    <div> <a
+                            href="https://www.amazon.in/Mountain-You-Transforming-Self-Sabotage-Self-Mastery/dp/9355434146">Amazon</a>
+                    </div>
+                    <div><a
+                            href="https://www.flipkart.com/mountain-you-transforming-self-sabotage-into-self-mastery-english/p/itm0495d8cf3d563">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="fw-bold ms-5 mt-4 badge  p-2 fs-6" style="background-color: brown;" id="feedbackbutton">Feedback
+                Form</div>
+
+            <div class="box p-2" id="feedbackform">
+                <dl class="mt-4 ms-3 me-3">
+                    <dt class="badge bg-primary p-2 fs-6 mb-2">Name</dt>
+                    <dd><input type="text" class="form-control" id="name1"></dd>
+                </dl>
+                <dl class="ms-3 me-3">
+                    <dt class="badge bg-primary p-2 fs-6 mb-2">Feedback</dt>
+                    <dd><input type="text" class="form-control" id="feedback1"></dd>
+                </dl>
+                <div class="btn btn-primary ms-5 w-75 me-3 mt-4" onclick="feedbackdetails()">Submit</div>
+            </div>
+
+        </div>
+        <br>
+        <div id="page1js"
+            style="display: none; background-color: rgb(26, 229, 219); border-radius: 10px; color: white; padding: 20px;">
+            <h3 style="color: lemonchiffon;">Feedback Submitted Successfully!</h3>
+            <dl>
+                <dt>Name</dt>
+                <dd id="lblname"></dd>
+                <dt>feedback</dt>
+                <dd id="lblfeedback"></dd>
+            </dl>
+        </div>
+    </div>
+</body>
+
+</html>

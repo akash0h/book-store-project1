@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../public/images/book2_vKN_icon.ico" type="image/x-icon">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style type="text/css">
+        @media screen and (orientation : landscape) {
+            .mainn {
+                padding: 300px;
+                background-color: aqua;
+                height: 100vh;
+
+            }
+
+            .main {
+                background-color: wheat;
+                border-radius: 20px;
+                margin-top: -240px;
+
+
+            }
+
+            .box {
+                border: 1px solid black;
+                width: 350px;
+                height: 300px;
+                margin-left: 200px;
+                border-radius: 15px;
+            }
+
+            .pp {
+                margin-top: -5px;
+            }
+
+            body {
+                background-attachment: scroll;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+
+            .page1 {
+                background-color: darksalmon;
+            }
+        }
+
+        @media screen and (orientation : portrait) {
+            .page1 {
+                color: black;
+                background-color: burlywood;
+            }
+
+            body {
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .page1_home {
+            margin-left: 550px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        function feedbackdetails() {
+            document.getElementById("page1js").style.display = "block";
+            document.getElementById("feedbackform").style.display = "none";
+            document.getElementById("feedbackbutton").style.display = "none";
+            document.getElementById("feedbackbutton").textContent = "Feedback"; //color will not change for changing color next line
+            document.getElementById("lblname").textContent = document.getElementById("name1").value;
+            document.getElementById("lblfeedback").textContent = document.getElementById("feedback1").value;
+
+        }
+
+    </script>
+
+</head>
+
+<body background="../public/image/background3.jpeg">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <div class="mainn">
+        <div class="main ">
+            <div class="h3 bg-secondary p-4 text-white text-center mt-1 rounded-2">Book Showcase:Book 1 Details</div>
+            <div class="bg-black p-3 pp rounded-2">
+                <a href="project.html"><button class="page1_home btn btn-link">HOME</button></a>
+            </div>
+        </div>
+
+
+        <div class="page1">
+            <div>
+                <div class="h4 mt-2 ms-4 badge  p-3 fs-6">Don't Believe Everything You Think (English)</div>
+                <div>
+                    <a href="https://www.amazon.in/Art-Being-ALONE-Solitude-Loneliness-ebook/dp/B0C4YC8CXS">
+                        <img src="../public/images/Book2.jpg" alt="" class="ms-4" style="height: 340px;"></a>
+
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faq"><span class="bi-"></span>Genre</button>
+                <div class=" collapse  rounded-1 p-2 " id="faq">
+                    <ul>
+                        <li>Existentialism (e.g., works by Sartre or Camus) explores the individual's confrontation with
+                            meaning, solitude, and the search for purpose in an indifferent world.</li>
+
+                        <li> Autobiographies and Memoirs can reflect deeply personal experiences of being alon</li>
+                        <li> Poetry often delves into solitude as a meditative or emotional experience (think of poets
+                            like Emily Dickinson or Sylvia Plath).</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faqq">Index Page</button>
+                <div class=" collapse  rounded-1 p-2 " id="faqq">
+                    <ul>
+                        <li>Introduction</li>
+                        <li>The Beauty of Solitude</li>
+                        <li> Dispelling the Myths About Being Alone</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faqqq">Author</button>
+                <div class=" collapse  rounded-1 p-2 " id="faqqq">
+                    <li>Joseph Nguyen is the author of the internationally bestselling book "Don't Believe Everything
+                        You
+                        Think," which has been translated into over 31 languages. He is recognized as a spiritual
+                        thought
+                        leader dedicated to helping individuals understand their true nature beyond limiting beliefs and
+                        thoughts.</li>
+
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faqqqq">Overview</button>
+                <div class=" collapse  rounded-1 p-2 " id="faqqqq">
+                    <li>An overview of "The Art of Being Alone" could encompass a reflection on solitude and its
+                        significance across various aspects of life. It’s a concept that invites introspection,
+                        self-growth,
+                        and mindfulness, offering individuals the opportunity to engage in self-discovery and peaceful
+                        reflection. In today’s fast-paced world, we often find ourselves surrounded by constant stimuli,
+                        making time alone a rare and undervalued experience.</li>
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faq3">Refrence</button>
+                <div class=" collapse  rounded-1 p-2 " id="faq3">
+                    <li> Philosophical and Spiritual References
+                        "Meditations" by Marcus Aurelius
+                        While not directly about solitude, this classic work of Stoic philosophy explores inner peace,
+                        reflection, and self-reliance, all of which are themes that align with the art of being alone.
+
+                        "The Tao of Pooh" by Benjamin Hoff
+                        Though more lighthearted, this book uses the character of Winnie the Pooh to reflect on the
+                        power of
+                        simplicity, stillness, and solitude.
+
+                        "Man's Search for Meaning" by Viktor Frankl
+                        Frankl's reflections on his time in concentration camps delve into how solitude and suffering
+                        can
+                        lead to deeper existential meaning and understanding.
+
+                        Poetry
+                        "The Selected Poems of Rainer Maria Rilke"
+                        Rilke's poems often explore themes of solitude, introspection, and the personal growth that
+                        comes
+                        from being alone with one's thoughts.
+
+                        "The Poetry of Emily Dickinson"
+                        Dickinson's works frequently explore themes of isolation, silence, and the internal world,
+                        making
+                        her a quintessential poet when it comes to the art of being alone.</li>
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success w-50 p-2 fs-6 " data-bs-toggle="collapse"
+                    data-bs-target="#faq4">Purchase Link</button>
+                <div class=" collapse  rounded-1 p-2 " id="faq4">
+                    <div> <a
+                            href="https://www.amazon.in/Art-Being-ALONE-Solitude-Loneliness-ebook/dp/B0C4YC8CXS">Amazon</a>
+                    </div>
+                    <div><a
+                            href="https://www.flipkart.com/art-being-alone-loneliness-my-cage-solitude-home/p/itm1df2b7d90029a">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="fw-bold ms-5 mt-4 badge  p-2 fs-6" style="background-color: brown;" id="feedbackbutton">Feedback
+                Form</div>
+
+            <div class="box p-2" id="feedbackform">
+                <dl class="mt-4 ms-3 me-3">
+                    <dt class="badge bg-primary p-2 fs-6 mb-2">Name</dt>
+                    <dd><input type="text" class="form-control" id="name1"></dd>
+                </dl>
+                <dl class="ms-3 me-3">
+                    <dt class="badge bg-primary p-2 fs-6 mb-2">Feedback</dt>
+                    <dd><input type="text" class="form-control" id="feedback1"></dd>
+                </dl>
+                <div class="btn btn-primary ms-5 w-75 me-3 mt-4" onclick="feedbackdetails()">Submit</div>
+            </div>
+
+        </div>
+        <br>
+        <div id="page1js"
+            style="display: none; background-color: rgb(36, 211, 211); border-radius: 10px; color: white; padding: 20px;">
+            <h3 style="color: lemonchiffon;">Feedback submitted successfully!</h3>
+            <dl>
+                <dt>Name</dt>
+                <dd id="lblname"></dd>
+                <dt>feedback</dt>
+                <dd id="lblfeedback"></dd>
+            </dl>
+        </div>
+    </div>
+</body>
+
+</html>

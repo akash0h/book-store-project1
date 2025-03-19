@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../public/images/book1_wpc_icon.ico" type="image/x-icon">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style type="text/css">
+        @media screen and (orientation : landscape) {
+            .mainn {
+                padding: 300px;
+                background-color: aqua;
+                height: 100vh;
+
+            }
+
+            .main {
+                background-color: wheat;
+                border-radius: 20px;
+                margin-top: -240px;
+
+            }
+
+            .box {
+                border: 1px solid black;
+                width: 350px;
+                height: 300px;
+                margin-left: 200px;
+                border-radius: 15px;
+            }
+
+            .pp {
+                margin-top: -5px;
+            }
+
+            body {
+                background-attachment: scroll;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+
+            .page1 {
+                background-color: darksalmon;
+            }
+        }
+
+        @media screen and (orientation : portrait) {
+            .page1 {
+                color: black;
+                background-color: burlywood;
+            }
+
+            body {
+                
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .page1_home{
+            margin-left: 550px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        function feedbackdetails(){
+            document.getElementById("page1js").style.display = "block";
+            document.getElementById("feedbackform").style.display = "none";
+            document.getElementById("feedbackbutton").style.display = "none";
+            document.getElementById("feedbackbutton").textContent="Feedback"; //color will not change for changing color next line
+            document.getElementById("lblname").textContent=document.getElementById("name1").value;
+            document.getElementById("lblfeedback").textContent=document.getElementById("feedback1").value;
+            
+        }
+
+    </script>
+
+</head>
+
+<body background="../public/image/background3.jpeg">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <div class="mainn">
+        <div class="main ">
+            <div class="h3 bg-secondary p-4 text-white text-center mt-1 rounded-2">Book Showcase:Book 1 Details</div>
+            <div class="bg-black p-3 pp rounded-2">
+                <a href="project.html"><button class="page1_home btn btn-link">HOME</button></a>
+            </div>
+        </div>
+
+
+        <div class="page1">
+            <div>
+                <div class="h4 mt-2 ms-4 badge  p-3 fs-6">Don't Believe Everything You Think (English)</div>
+                <div>
+                    <a href="https://www.amazon.in/Dont-Believe-Everything-You-Think/dp/935543135X/ref=sr_1_3?crid=1YF6I9GY0QN17&dib=eyJ2IjoiMSJ9.NXWealtJftWBOjJNCtUdfT2ZusOKK9FtibpEWe8JhrmTlV5l7i56EkVksWi13muvbzNE-6jMG4IS-bMKmG9aRm9tCphd0p6iXaczkCj9BaAriuBiKzCBHRvKFJJbQ3WJq1ofz9tDA11XniPTUqScrrw_cAid5Tbw7I2YT0EPGev-2sAu6IFQk6LiyUI0Uic0F-bE04ZC0lufF5J1TqpsEY4UWFHPMT_EcoQd_aR2jVI.nVRy2KWBUSXz7tJm_3gwMjOvh2dt-8-bj7d3VLNAVKk&dib_tag=se&keywords=book&qid=1742293706&sprefix=book%2Caps%2C233&sr=8-3"><img src="../public/images/Book1.jpg" alt="" class="ms-4" style="height: 240px;"></a>
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faq"><span class="bi-"></span>Genre</button>
+                <div class=" collapse  rounded-1 p-2 " id="faq">
+                    <ul>
+                        <li>Self-Help</li>
+                        <li>Psychology</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faqq">Index Page</button>
+                <div class=" collapse  rounded-1 p-2 " id="faqq">
+                    <ul>
+                        <li>Introduction</li>
+                        <li>Chapter1:Overview</li>
+                        <li>Chapter2:Story Begins</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faqqq">Author</button>
+                <div class=" collapse  rounded-1 p-2 " id="faqqq">
+                    Joseph Nguyen is the author of the internationally bestselling book "Don't Believe Everything You Think," which has been translated into over 31 languages. He is recognized as a spiritual thought leader dedicated to helping individuals understand their true nature beyond limiting beliefs and thoughts.
+
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faqqqq">Overview</button>
+                <div class=" collapse  rounded-1 p-2 " id="faqqqq">
+                    This book serves as a comprehensive resource for those looking to understand their thought patterns better and achieve mental clarity.    
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success p-2 fs-6 w-25" data-bs-toggle="collapse"
+                    data-bs-target="#faq3">Refrence</button>
+                <div class=" collapse  rounded-1 p-2 " id="faq3">
+                    Overall, "Don't Believe Everything You Think" serves as a guide for those seeking to understand their thought processes better and cultivate a more fulfilling life. It combines philosophical insights with practical advice aimed at achieving mental clarity and emotional well-being
+                </div>
+            </div>
+            <div>
+                <button class="btn  fw-bold m-2 ms-3 badge bg-success w-50 p-2 fs-6" data-bs-toggle="collapse"
+                    data-bs-target="#faq4">Purchase Link</button>
+                <div class=" collapse  rounded-1 p-2 " id="faq4">
+                    <div> <a href="https://www.amazon.in/Dont-Believe-Everything-You-Think/dp/935543135X/ref=sr_1_3?crid=1YF6I9GY0QN17&dib=eyJ2IjoiMSJ9.NXWealtJftWBOjJNCtUdfT2ZusOKK9FtibpEWe8JhrmTlV5l7i56EkVksWi13muvbzNE-6jMG4IS-bMKmG9aRm9tCphd0p6iXaczkCj9BaAriuBiKzCBHRvKFJJbQ3WJq1ofz9tDA11XniPTUqScrrw_cAid5Tbw7I2YT0EPGev-2sAu6IFQk6LiyUI0Uic0F-bE04ZC0lufF5J1TqpsEY4UWFHPMT_EcoQd_aR2jVI.nVRy2KWBUSXz7tJm_3gwMjOvh2dt-8-bj7d3VLNAVKk&dib_tag=se&keywords=book&qid=1742293706&sprefix=book%2Caps%2C233&sr=8-3">Amazon</a></div>
+                    <div><a href="https://www.flipkart.com/don-t-believe-everything-you-think/p/itm6dfd64646cf55">Flipkart</a></div>
+                </div>
+            </div>
+            <div class="fw-bold ms-5 mt-4 badge  p-2 fs-6" style="background-color: brown;" id="feedbackbutton">Feedback Form</div>
+
+            <div class="box p-2" id="feedbackform">
+                <dl class="mt-4 ms-3 me-3">
+                    <dt class="badge bg-primary p-2 fs-6 mb-2">Name</dt>
+                    <dd><input type="text" class="form-control" id="name1"></dd>
+                </dl>
+                <dl class="ms-3 me-3">
+                    <dt class="badge bg-primary p-2 fs-6 mb-2" >Feedback</dt>
+                    <dd><input type="text" class="form-control" id="feedback1"></dd>
+                </dl>
+                <div class="btn btn-primary ms-5 w-75 me-3 mt-4" onclick="feedbackdetails()">Submit</div>
+            </div>
+
+        </div>
+        <br>
+        <div id="page1js" style="display: none; background-color: rgb(25, 164, 174); border-radius: 10px; color: white; padding: 20px;"> 
+            <h3 style="color: lemonchiffon;">Feedback submitted successfully!</h3>
+            <dl>
+                <dt>Name</dt>
+                <dd id="lblname"></dd>
+                <dt>feedback</dt>
+                <dd id="lblfeedback"></dd>
+            </dl>
+        </div>
+    </div>
+</body>
+
+</html>
